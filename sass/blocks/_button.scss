@@ -1,0 +1,112 @@
+.button {
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-light;
+    border: none;
+    z-index: 5; 
+    cursor: pointer; 
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover {
+    color: rgb(183, 177, 177);
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 60px;
+    background: transparent;
+    transform: skew(-25deg);
+    border:1px solid $color-light;
+    
+    left: 23px;
+    top: -8px;
+    z-index: 3;
+}
+
+.button-color::after {
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 60px;
+    background: $color-add;
+
+    transform: skew(-25deg);
+   
+    left: 8px;
+    top: 1px;
+    z-index:-1;
+}
+
+.button:hover {
+    opacity:0.8;
+}
+
+.product__link {
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:15px 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color:$color-add;
+    border: none;
+    z-index: 5;
+}
+
+.product__link::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    transform: skew(-30deg);
+    border:1px solid $color-add;
+   
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    @media (max-width: 767px) {
+       width: 155px;
+       top: 0px;
+       left: 30px; 
+    } 
+}
+
+.product__link:hover {
+    color: $color-light;
+    opacity: 0.8; 
+}
+
+.product__link:hover::after {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    transform: skew(-30deg);
+    background:$color-add;
+    
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    //*mobile 
+    @media (max-width: 767px) {
+        width: 155px;
+        left: 30px;  
+    }   
+} 
+
+

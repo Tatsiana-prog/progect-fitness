@@ -1,0 +1,59 @@
+.modal-icon {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: $color-light;
+       
+    display: none;
+   	cursor: pointer;
+
+    //*tablet small
+    @media (max-width: 991px) {
+        display: block;
+    }    
+}
+
+.modal-icon::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 5px;
+    top:-10px;
+    left: 0;
+    background-color: $color-light;   
+}
+
+.modal-icon::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height:5px;
+    top:10px;
+    left: 0;
+    background-color: $color-light;   
+}
+
+/* Active state */
+.modal-icon--active {   
+    position: fixed;
+    background: transparent;
+    top: 40px;
+    right: 15px;
+}
+
+.modal-icon--active::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 0.1s linear, transform 0.2s ease-in 0.1s;
+    background-color: $color-light;
+}
+
+.modal-icon--active::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: $color-light;
+    transition: top 0.1s linear, transform 0.2s ease-in 0.1s;  
+}
+
+
+    

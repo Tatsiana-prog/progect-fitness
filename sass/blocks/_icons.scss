@@ -1,0 +1,39 @@
+.map__link-social {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(/img/icon/icon-inst.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon{
+    cursor: pointer;
+    display:block;
+    width: 22px;
+    height: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.icon_inst {
+    background: url(/img/icon/icon-inst-white.svg);
+    cursor: pointer;
+    &:hover {
+        background: url(/img/icon/icon-inst-color.svg);  
+    }
+}
+
+.icon_wk {
+    width: 30px;
+    height: 18px;
+    background: url(/img/icon/icon-wk-white.svg);
+    cursor: pointer;
+    &:hover {
+        background: url(/img/icon/icon-wk-color.svg);  
+    }
+}
